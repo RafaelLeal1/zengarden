@@ -266,3 +266,43 @@ h4, h5, h6 {
     }
   }
   
+  a {
+    color: #000; /* Cor padrão */
+    font-weight: bold; /* Negrito por padrão */
+    text-decoration: none;
+  
+    &:hover {
+      color: #ccc; /* Cor ao passar o mouse */
+    }
+  
+    &:visited {
+      font-weight: normal; /* Remove o negrito dos links visitados */
+    }
+  }
+  
+  .sidebar ul a {
+    color: #fff; /* Cor dos links no menu lateral */
+    background-color: #333;
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+  
+    &:hover {
+      background-color: #555;
+    }
+  }
+  
+  .main p:first-of-type:first-letter {
+    font-size: 3em; /* Tamanho 3 vezes maior */
+    font-family: "Times New Roman", serif; /* Fonte diferente */
+    float: left;
+    margin-right: 1em;
+  }
+  
+  .sidebar ul li {
+    border-top: 1px solid #ddd;
+  }
+  
+  .sidebar ul li:last-child {
+    border-bottom: 1px solid #ddd;
+  }
+  
