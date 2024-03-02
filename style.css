@@ -159,13 +159,74 @@ h4, h5, h6 {
   }
   
   .sidebar {
-    position: absolute; /* Posicionamento absoluto */
-    top: 560px; /* Início após a introdução */
-    left: 62%; /* Início após o elemento explanation */
-    width: 38%; /* Largura de 38% */
-    padding: 2% 0; /* Espaçamento interno horizontal de 2% */
+    position: absolute;
+    top: 550px;
+    left: 63.5%;
+    width: 32.8%;
+    z-index: 1; /* Posiciona o sidebar acima do explanation */
   }
   
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .benefits, .participation, .requirements {
+    width: 60%; /* Largura de 60% */
+    margin-right: 35%; /* Espaçamento à direita de 35% */
+    border-right: 1px solid #1f295c; /* Borda direita de 1px */
+    padding-right: 2%; /* Espaçamento interno à direita de 2% */
+  }
+
+  .benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .benefits .text {
+    width: 70%; /* Largura de 70% para o texto */
+  }
+  
+  .benefits .title {
+    width: 30%; /* Largura de 30% para o título */
+    text-align: center;
+  }
+  
+  .benefits .title h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .participations {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .participations .item {
+    width: 50%; /* Largura de 50% para cada item */
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .participations .title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .benefits, .participations {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .participations {
+    border-top: none; /* Remove a borda superior duplicada */
+  }
+  
+  
+
   
 
   footer {
@@ -181,4 +242,27 @@ h4, h5, h6 {
     border: 2px solid #fff; /* Borda sólida de 2px */
   }
   
+  .main footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main footer a {
+    margin: 0 10px; /* Espaçamento entre os links */
+    width: 100px; /* Tamanho fixo para os links */
+  }
+  
+  @media (max-width: 768px) {
+    /* Layout para dispositivos móveis */
+    .main footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .main footer a {
+      margin: 0 0 10px;
+      width: auto; /* Tamanho automático para os links */
+    }
+  }
   
