@@ -147,6 +147,27 @@ h4, h5, h6 {
     text-align: center; /* Centralização dos itens do menu */
   }
 
+  .page-wrapper {
+    position: relative; /* Define o elemento como referência para posicionamento */
+  }
+
+  .explanation {
+    width: 60%; /* Largura de 60% */
+    margin-right: 35%; /* Espaçamento à direita de 35% */
+    border-right: 1px solid #1f295c; /* Borda direita de 1px */
+    padding-right: 2%; /* Espaçamento interno à direita de 2% */
+  }
+  
+  .sidebar {
+    position: absolute; /* Posicionamento absoluto */
+    top: 560px; /* Início após a introdução */
+    left: 62%; /* Início após o elemento explanation */
+    width: 38%; /* Largura de 38% */
+    padding: 2% 0; /* Espaçamento interno horizontal de 2% */
+  }
+  
+  
+
   footer {
     background-color: #333; /* Cor de fundo escura */
     color: #fff; /* Cor da fonte clara */
