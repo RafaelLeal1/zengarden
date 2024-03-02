@@ -306,3 +306,42 @@ h4, h5, h6 {
     border-bottom: 1px solid #ddd;
   }
   
+  @media (max-width: 768px) {
+    /* Layout Mobile */
+  
+    .sidebar {
+      position: static; /* Remove o reposicionamento */
+      margin: 0;
+      border-right: none;
+    }
+  
+    .explanation {
+      margin-right: 0;
+    }
+  
+    .main {
+      flex-direction: column; /* Orientação vertical */
+    }
+  
+    header {
+      height: auto; /* Remove a altura fixa */
+    }
+  
+    p {
+      margin-top: 0; /* Remove o espaçamento inicial */
+    }
+  }
+  
+  @media print {
+    /* Layout para Impressão */
+  
+    body {
+      font-family: "Times New Roman", serif; /* Fonte serifada */
+    }
+  
+    header {
+      background-color: #fff; /* Cor de fundo clara */
+      color: #000; /* Cor de texto escura */
+    }
+  }
+  
